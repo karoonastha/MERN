@@ -34,9 +34,9 @@ const pausebtn = () => {
 };
 
 const resetbtn = () => {
-    let h = 00;
-    let m = 00;
-    let s = 00;
+    let h = 0;
+    let m = 0;
+    let s = 0;
      clearInterval(interval);
     sec.innerHTML = s;
     min.innerHTML = m;
