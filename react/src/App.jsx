@@ -12,6 +12,7 @@ import SinglePage from "./pages/SinglePage";
 import Table from "./pages/Table";
 import AddProduct from "./pages/AddProduct";
 import EditProduct from "./pages/EditProduct";
+import FetchNode from "./pages/FetchNode";
 
 const App = () => {
   // const AdminLayout = () => {
@@ -58,12 +59,20 @@ const App = () => {
       element: <AddProduct />,
     },
     {
+      path: "/edit-product/:id",
+      element: <EditProduct />,
+    },
+    {
       path: "/products/:id",
       element: <SinglePage />,
     },
     {
       path: "/api",
       element: <Api />,
+    },
+    {
+      path: "/api-node",
+      element: <FetchNode />,
     },
     {
       path: "/table",
@@ -77,11 +86,6 @@ const App = () => {
       path: "*",
       element: <NotFound />,
     },
-    {
-      path: "/edit-product/id",
-      element: <EditProduct/>,
-    },
-    
     // {
     //   path: "/dashboard",
     //   element: <AdminLayout/>,
